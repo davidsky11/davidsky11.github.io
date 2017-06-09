@@ -1,7 +1,7 @@
 # Site settings
 name: Less Or More
 email: Davidsky11@126.com
-author: Freud Kang
+author: Davidsky
 url: http://www.davidsky.com
 resume_site: http://www.davidsky.com/Resume.io/
 github: https://github.com/davidsky11/
@@ -23,15 +23,15 @@ highlighter: Pygments
 # Build settings
 markdown: kramdown
 
-baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+baidu_analysis: b26fd8883c34a0b90faf8360f4a4f5b4
 
 FB:
   comments :
     provider : yungentie
     duoshuo:
-        short_name : luoyan35714
+        short_name : davidsky
     disqus :
-        short_name : freudkang
+        short_name : davidsky
     # facebook :
     #   appid : 123
     #   num_posts: 5
