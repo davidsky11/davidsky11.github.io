@@ -8,4 +8,4 @@ tag: 教程
 
 * content
 {:toc}
-http://kvlt89757.qiniudn.com/17-6-9/81082368.jpg
+![大型网站架构技能图谱](http://or9g8eqm7.bkt.clouddn.com/17-6-9/67905195.jpg)
