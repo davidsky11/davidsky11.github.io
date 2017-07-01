@@ -2,8 +2,8 @@
 layout: post
 title:  Java反射机制
 date:   2015-06-09 00:00:00 +0800
-categories: document
-tag: 教程
+categories: java基础
+tag: 反射
 ---
 
 * content
