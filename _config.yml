@@ -62,8 +62,8 @@ widgets:
 - category
 - tag
 - tagcloud
-- links
-- douban
+## - links
+## - douban
 - github-card
 - rss
 ## provide seven widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo,douban
@@ -91,9 +91,8 @@ share_to: true #enable share-to buttons if true
 
 #### Author information
 author:
-  name: yitao      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
+  name: kevin   
+  intro_line1:  "Hello ,I'm Kevin in somewhere."    ## your introduction on the bottom of the page
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
@@ -101,7 +100,7 @@ author:
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email:      ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     ## e.g. wuchong for https://github.com/wuchong
+  github: davidsky11.github.com    ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
@@ -117,8 +116,7 @@ toc:
 
 #### Links
 links:
-  码农圈: https://coderq.com
-  Jark's Blog: http://wuchong.me
+  推酷: http://www.tuicool.com/
 
 #### Comment
 disqus_shortname:     ## e.g. wuchong      your disqus short name.        website: http://disqus.com
@@ -133,10 +131,12 @@ jiathis:
   tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
 
 #### Analytics
-google_analytics:
-  enable: false
-  id:        ## e.g. UA-46321946-2 your google analytics ID.
-  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
+baidu_analysis: b26fd8883c34a0b90faf8360f4a4f5b4
+##google_analytics:
+##  enable: false
+##  id:        ## e.g. UA-46321946-2 your google analytics ID.
+##  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
+
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
