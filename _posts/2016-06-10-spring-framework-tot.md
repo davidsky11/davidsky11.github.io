@@ -9,73 +9,80 @@ tag: spring
 * content
 {:toc}
 
-# 知识点_Spring
-
-标签（空格分隔）： spring
 Spring简介
----
+------
 
 1、Spring是什么？
-　　在了解Spring之前，我们来了解在J2EE框架下企业级开发采用EJB框架的一些不足：
-　　a、EJB太笨重，而且Entity EJB不能脱离容器
-　　b、企业级服务使用困难
-　　c、开发的复杂度太高
-　　d、侵入式方案，EJB要使用特定的接口
+
+&emsp;&emsp;在了解Spring之前，我们来了解在J2EE框架下企业级开发采用EJB框架的一些不足：
+
++ EJB太笨重，而且Entity EJB不能脱离容器
++ 企业级服务使用困难
++ 开发的复杂度太高
++ 侵入式方案，EJB要使用特定的接口
+
 　　因此，Spring应运而生。
+
 　　**Spring是一个开源的用于简化采用Java语言开发企业级程序的一个分层的框架。**
-> 关于程序的分层结构：
+	
+关于程序的分层结构：
+
 **1、Presentation layer（表示层）**
-　　a、表示逻辑（生成界面代码）
-　　b、接收请求
-　　c、处理业务层抛出的异常
-　　d、负责规则验证（数据格式，数据非空等）
-　　e、流程控制
++ 表示逻辑（生成界面代码）
++ 接收请求
++ 处理业务层抛出的异常
++ 负责规则验证（数据格式，数据非空等）
++ 流程控制
+
 **2、Service layer（服务层/业务层）**
-　　a、封装业务逻辑处理，并且对外暴露接口
-　　b、负责事务，安全等服务
++ 封装业务逻辑处理，并且对外暴露接口
++ 负责事务，安全等服务
+
 **3、Persistence layer（持久层）**
-　　a、封装数据访问的逻辑，暴露接口
-　　b、提供方便的数据访问的方案（查询语言，API，映射机制等）
-　　**Domain layer（域层）**
-　　a、业务对象以及业务关系的表示
-　　b、处理简单的业务逻辑
-　　c、域层的对象可以穿越表示层，业务层，持久层
++ 封装数据访问的逻辑，暴露接口
++ 提供方便的数据访问的方案（查询语言，API，映射机制等）
+
+**4、Domain layer（域层）**
++ 业务对象以及业务关系的表示
++ 处理简单的业务逻辑
++ 域层的对象可以穿越表示层，业务层，持久层
 　　
 ![此处输入图片的描述][1]
 
-----------
 
 Spring的作用
---
-　　为什么要使用Spring？
+------
+
+为什么要使用Spring？
+
 1、简化企业级开发
-　　a、封装了大部分的企业级服务，提供了更好的访问这些服务的方式
-　　b、提供了IOC，AOP功能的容器，方便编程
-　　
+&emsp;&emsp;封装了大部分的企业级服务，提供了更好的访问这些服务的方式
+&emsp;&emsp;提供了IOC，AOP功能的容器，方便编程
+
 2、遵循Spring框架的应用程序，一定是设计良好的，针对接口编程，这样就简化了企业级程序的设计。
 
 3、Spring的组成
-
- - **Spring Core：** 核心容器，BeanFactory提供了组件生命周期的管理，组件的创建，装配，销毁等功能
- - **Spring Context：** ApplicationContext，扩展核心容器，提供事件处理、国际化等功能。它提供了一些企业级服务的功能，提供了JNDI，EJB，RMI的支持。
- - **Spring AOP：** 提供切面支持
- - **Spring DAO：** 提供事务支持，JDBC，DAO支持
- - **Spring ORM：** 对流行的O/R Mapping封装或支持
- - **Spring Web：** 提供Web应用上下文，对Web开发提供功能上的支持，如请求，表单，异常等
- - **Spring Web MVC：** 全功能MVC框架，作用等同于Struts。
-
++ **Spring Core：** 核心容器，BeanFactory提供了组件生命周期的管理，组件的创建，装配，销毁等功能
++ **Spring Context：** ApplicationContext，扩展核心容器，提供事件处理、国际化等功能。它提供了一些企业级服务的功能，提供了JNDI，EJB，RMI的支持。
++ **Spring AOP：** 提供切面支持
++ **Spring DAO：** 提供事务支持，JDBC，DAO支持
++ **Spring ORM：** 对流行的O/R Mapping封装或支持
++ **Spring Web：** 提供Web应用上下文，对Web开发提供功能上的支持，如请求，表单，异常等
++ **Spring Web MVC：** 全功能MVC框架，作用等同于Struts。
 
 ----------
+
 Spring的IoC
---
+------
+
 ### IoC的概念 ###
 　　IoC，Inversion of Control，控制反转。
 　　对象的协作关系由对象自己负责。
 　　依赖注入：对象的协作关系由容器来建立。
 ### IoC的类型 ###
-　　1、基于特定接口（侵入式方案）
-　　2、基于set方法
-　　3、基于构造器
+1、基于特定接口（侵入式方案）
+2、基于set方法
+3、基于构造器
 ### Spring容器 ###
 　　Spring容器负责生成、组装、销毁组件，并负责事件处理、国际化等功能。
 　　1、BeanFactory< interface>
@@ -83,34 +90,42 @@ Spring的IoC
 　　　　实现主要包括XmlBeanFactory
 　　2、ApplicationContext
 　　3、WebApplicationContext
+
 ### IoC的使用 ###
-　　**Resource：** interface，用来包装资源
-　　**XmlBeanFactory：** BeanFactory的一个实现，使用Resource对象来查找配置文件
-　　**BeanFactory.getBean("beanId")：**取得以参数命名，或者Id等于参数值的一个Bean实例。
-　　BeanFactory（容器）在默认情况下，会采用单例方式返回对象。容器只到调用getBean方法时，才会实例化某个对象。
-　　(1) Spring可以采用XML或者.properties文件作配置
-　　(2) 配置文件（xml）
+
+**Resource：** interface，用来包装资源
+
+**XmlBeanFactory：** BeanFactory的一个实现，使用Resource对象来查找配置文件
+
+**BeanFactory.getBean("beanId")：**取得以参数命名，或者Id等于参数值的一个Bean实例。
+&emsp;&emsp;BeanFactory（容器）在默认情况下，会采用单例方式返回对象。容器只到调用getBean方法时，才会实例化某个对象。
+(1) Spring可以采用XML或者.properties文件作配置
+(2) 配置文件（xml）
 　　根元素< beans>可以有多个< bean>子元素，每个< bean>代表一个需要装配的对象。
 ### 1、setter注入###
 
-　　a、注入简单属性（String和八种基本类型）
-```　　<beans>
-　　　　<bean id=" beanId" class=" classpath" autowire=" " dependency-check=" " >
-　　　　　　<property name=" parameterName" >
-　　　　　　　　<value>parameterValue</value>
-　　　　　　</property>
-　　　　</bean>
-　　</beans>```
+a、注入简单属性（String和八种基本类型）
+```　　
+<beans>
+    <bean id=" beanId" class=" classpath" autowire=" " dependency-check=" " >
+        <property name=" parameterName" >
+            <value>parameterValue</value>
+        </property>
+    </bean>
+</beans>
+```
 　　
 　　对于基本类型，Spring容器会自动作类型转换，以便赋值。
 　　
-　　b、注入对象
-```　　<bean>
-　　　　<ref local=" beanId">
-　　<bean>```
-　　+ 让Spring容器在当前配置文件中找到相应的Bean，并调用set方法，注入该Bean。
-　　+ 将一个Bean的定义嵌套在另一个Bean中（可读性差），被嵌套的Bean不能采用getBean()返回
-　　+ 采用<ref bean=" ">搜索多个配置文件来注入
+b、注入对象
+```　　
+<bean>
+    <ref local=" beanId">
+<bean>
+```
++ 让Spring容器在当前配置文件中找到相应的Bean，并调用set方法，注入该Bean。
++ 将一个Bean的定义嵌套在另一个Bean中（可读性差），被嵌套的Bean不能采用getBean()返回
++ 采用<ref bean=" ">搜索多个配置文件来注入
 
 　　c、注入集合类型
 　　c.1、Set
@@ -123,14 +138,16 @@ Spring的IoC
 　　　　Properties有< props>子元素
 　　　　
 ### 2、Constructor注入 ###
-```　　<bean>
-　　　　<constructor-arg>
-　　　　　　<value> </value>
-　　　　</constructor-arg>
-　　　　<constructor-arg>
-　　　　　　<ref bean=" " />
-　　　　</constructor-arg>
-　　</bean>```
+```　　
+<bean>
+    <constructor-arg>
+        <value> </value>
+    </constructor-arg>
+    <constructor-arg>
+        <ref bean=" " />
+    </constructor-arg>
+</bean>
+```
 
 　　如果Bean属性不多，并且属性值必须要注入才能使用，则应该采用constructor注入，其他情况就要set方法注入。
 　　*装配关系检查（Dependency checking）*
@@ -152,6 +169,7 @@ Spring的IoC
 　　先按照constructor，后按照byType。
 　　**4、autowire="constructor"**
 　　先去匹配构造器中参数类型，后与配置文件中的Bean类型匹配。
+
 ### 3、比较两种注入方式 ###
 　　关于自动匹配：
 　　优点：快速开发
@@ -759,4 +777,4 @@ Spring的IoC
  　　(2) 容器大量使用反射等机制装配对象，影响性能，对于高并发的大型应用无能为力。
 
 
-  [1]: http://img181.poco.cn/mypoco/myphoto/20110121/13/55913548201101211309453196937047417_001.jpg
+![](http://img181.poco.cn/mypoco/myphoto/20110121/13/55913548201101211309453196937047417_001.jpg)
