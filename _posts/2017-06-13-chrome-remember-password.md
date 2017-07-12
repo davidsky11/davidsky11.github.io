@@ -3,7 +3,7 @@ layout: post
 title:  关于Chrome记住密码的规则
 date:   2017-06-13 00:00:00 +0800
 categories: document
-tag: 记住密码
+tag: 密码
 ---
 
 * content
