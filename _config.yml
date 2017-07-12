@@ -119,10 +119,10 @@ links:
   推酷: http://www.tuicool.com/
 
 #### Comment
+laibili_shortname: #89757
 disqus_shortname:     ## e.g. wuchong      your disqus short name.        website: http://disqus.com
 hypercomments_id:     ## e.g. 91510        your hypercomments widget id.  website: http://hypercomments.com
 yungentie_productkey: ## your netease yungentie product key.              website: https://gentie.163.com
-laibili_shortname: #89757
 ## set only one of them
 
 #### Share button
