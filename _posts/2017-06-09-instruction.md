@@ -8,4 +8,5 @@ tag: 技能，架构
 
 * content
 {:toc}
+
 ![大型网站架构技能图谱](http://or9g8eqm7.bkt.clouddn.com/17-6-9/67905195.jpg)
