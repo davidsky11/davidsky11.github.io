@@ -10,7 +10,8 @@ highlighter: rouge
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /post/:categories/:year/:month/:day/:title
+permalink： pretty
+#permalink: /post/:categories/:year/:month/:day/:title
 
 #### Markdown Processors
 # 'redcarpet' is unsupported on GitHub Pages now.
