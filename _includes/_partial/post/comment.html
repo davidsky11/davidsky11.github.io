@@ -4,12 +4,9 @@
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
-{% elsif site.youyan_id %}
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2137845"></script>	  
 {% elsif site.laibili_shortname %}
 <div id="lv-container" data-id="city" data-uid="MTAyMC8yOTI3Mi81ODQw">
-<script type="text/javascript">
+	<script type="text/javascript">
    (function(d, s) {
        var j, e = d.getElementsByTagName(s)[0];
 
@@ -21,8 +18,8 @@
 
        e.parentNode.insertBefore(j, e);
    })(document, 'script');
-</script>
-<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
 {% elsif site.hypercomments_id %}
 <section id="comments" class="comment">

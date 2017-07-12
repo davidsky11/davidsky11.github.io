@@ -10,7 +10,8 @@ highlighter: rouge
 
 #### Permalink
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /post/:categories/:year/:month/:day/:title
+permalink： pretty
+#permalink: /post/:categories/:year/:month/:day/:title
 
 #### Markdown Processors
 # 'redcarpet' is unsupported on GitHub Pages now.
@@ -119,11 +120,10 @@ links:
   推酷: http://www.tuicool.com/
 
 #### Comment
+laibili_shortname: #89757
 disqus_shortname:     ## e.g. wuchong      your disqus short name.        website: http://disqus.com
 hypercomments_id:     ## e.g. 91510        your hypercomments widget id.  website: http://hypercomments.com
 yungentie_productkey: ## your netease yungentie product key.              website: https://gentie.163.com
-laibili_shortname: 
-youyan_id: 2137845
 ## set only one of them
 
 #### Share button
