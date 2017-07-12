@@ -3,7 +3,7 @@ layout: post
 title:  SpringMVC框架整理
 date:   2016-06-06 00:00:00 +0800
 categories: SpringMVC
-tag: 框架
+tag: SpringMVC
 ---
 
 * content

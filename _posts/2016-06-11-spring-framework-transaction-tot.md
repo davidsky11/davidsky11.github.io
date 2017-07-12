@@ -3,7 +3,7 @@ layout: post
 title:  Spring事务管理
 date:   2016-06-11 00:00:00 +0800
 categories: Spring
-tag: 事务管理
+tag: [Spring, 事务管理]
 ---
 
 * content

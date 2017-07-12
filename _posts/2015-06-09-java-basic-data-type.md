@@ -2,12 +2,13 @@
 layout: post
 title:  Java数据类型
 date:   2015-06-09 00:00:00 +0800
-categories: java基础
-tag: java_type
+categories: Java
+tag: Java
 ---
 
 * content
 {:toc}
+
 ### 一、Java基本数据类型 ###
   基本类型，或者内置类型，是Java中不同于类额特殊类型。基本类型共有八种，它们分别都有相对应的包装类。<br/>
 　　**基本类型可以分为三类：**
