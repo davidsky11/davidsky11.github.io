@@ -11,15 +11,15 @@ ga('send', 'pageview');
 
 {% if site.baidu_tongji.enable %}
 <script type="text/javascript">
-var _hmt = _hmt || [];
-(function() {
-	var hm = document.createElement("script");
-	hm.src = 'https://hm.baidu.com/hm.js%3F{{ site.baidu_tongji.sitecode }}';
-	var s = document.getElementsByTagName("script")[0]; 
-	s.parentNode.insertBefore(hm, s);
-})();
-//var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-//document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/hm.js%3F{{ site.baidu_tongji.sitecode }}' type='text/javascript'%3E%3C/script%3E"));
+//var _hmt = _hmt || [];
+//(function() {
+//	var hm = document.createElement("script");
+//	hm.src = 'https://hm.baidu.com/hm.js%3F{{ site.baidu_tongji.sitecode }}';
+//	var s = document.getElementsByTagName("script")[0]; 
+//	s.parentNode.insertBefore(hm, s);
+//})();
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/hm.js%3F{{ site.baidu_tongji.sitecode }}' type='text/javascript'%3E%3C/script%3E"));
 </script>
 {% endif %}
 
