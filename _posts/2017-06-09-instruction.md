@@ -116,7 +116,7 @@ tag: 架构
 			- Dubbo（BubboX）  服务治理，也可以作为微服务
 			- gRPC
 	- 构建
-		- <a href="http://www.yiibai.com/maven/">Maven</a>
+		- <a href="http://www.yiibai.com/maven/" target="_blank">Maven</a>
 		- Gradle
 	- 安全
 		- 单项散列算法
