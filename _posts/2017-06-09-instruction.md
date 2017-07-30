@@ -10,3 +10,299 @@ tag: 架构
 {:toc}
 
 ![大型网站架构技能图谱](http://or9g8eqm7.bkt.clouddn.com/17-6-9/67905195.jpg)
+
+ - 计算机基础
+	- 操作系统
+	- 编译原理
+	- 计算机网络
+	- 互联网协议
+		- TCP/IP
+		- HTTP 1.1/2.0
+		- HTTPS
+		- OAuth 2.0
+		- REST
+
+ - Java编程
+	- IDE
+		- Eclipse
+		- IntelliJ LDEA
+	- 版本控制
+		- Git
+		- SVN
+	- 笔记
+		- Evernote
+		- 有道云笔记
+		- 插件
+			- Chrome Evernote
+			- 微信公众号（evernote和有道云笔记）
+	- 阅读
+		- Kindle
+		- 优质计算机类纸质书
+	- 基础语法
+		- JDK 8
+	- 集合框架
+		- List
+			- ArrayList
+			- LinkedList
+		- Set
+			- HashSet
+			- TreeSet
+		- Map
+			- HashMap
+			- TreeMap
+			- ConcurrentHashMap
+		- Queue
+			- ConcurrentLinkedQueue
+		- Stack
+		- Collecionts的synchronizedXXX方法
+	- 工具类
+		- Google Guava
+		- Apache common lang/BeanUtils/Collections/IO
+		- JSON
+			- fastjson
+			- gson
+			- jackson
+	- JavaEE开发
+		- JSP/Servlet 3.x
+		- Session/Cookie
+		- JSTL/EL
+	- 框架
+		- Spring
+			- IOC
+			- AOP
+			- 常用注解
+		- SpringMVC
+		- MyBatis
+		- Shiro
+		- Netty
+	- 服务器
+		- Tomcat（Servlet容器）
+		- Nginx/Tengine（Web应用服务器）
+	- 高级特性
+		- 泛型
+		- 多态的实现原理
+		- 并发编程
+			- Executor框架
+			- Fork/join
+			- happen-before
+			- 数据结构
+				- ConcurrentHashMap
+				- ConcurrentLinkedQueue
+			- 线程池
+				- 参数设置
+				- 原理
+				- 决绝策略
+			- 线程状态
+			- Lock/synchronized
+			- 原子操作类
+			- 并发工具类
+				- CountDownLatch
+				- Semaphore
+				- CyclicBarrier
+				- Exchanger
+		- 网络编程
+			- Socket
+		- IO
+			- BIO
+			- NIO
+			- AIO
+
+		- 序列化
+			- JDK自带
+			- Google protobuf（性能高）
+		- 远程调用（RPC）
+			- RMI
+			- Thrift
+			- Dubbo（BubboX）  服务治理，也可以作为微服务
+			- gRPC
+	- 构建
+		- Maven
+		- Gradle
+	- 安全
+		- 单项散列双方
+			- MD5
+			- SHA
+		- 对称加密
+			- DES
+		- 非对称加密
+			- RSA
+			- HTTPS
+	- 测试
+		- 测试用例
+		- 白盒
+		- 黑盒
+		- Junit
+		- Spring Test
+		- CmdExcetor
+- JVM
+	- 认识Java虚拟机（默认Hotspot实现）
+	- 类加载机制（双亲委派模型）
+	- 内存模型
+	- GC
+		- 回收算法
+		- 垃圾收集器
+	- 调试
+	- 工具
+		- jstack
+		- jmap
+		- jconsole
+- 软件工程
+	- 运维
+	- 持续集成
+		- jenkins
+	- TDD
+	- 原则
+		- DRY
+		- 单一职责
+		- 开闭原则
+- 设计模式
+	- 工厂模式
+	- 代理模式
+	- 门面模式
+	- 观察者模式
+	- 责任链模式
+	- 适配器模式
+	- 装饰者模式
+	- 单例模式
+- Linux
+	- 发行版
+		- Ubuntu
+		- RedHat
+		- CenterOS
+	- 常用命令
+- 数据
+	- NoSQL
+		- MongoDB
+			- 文档模型
+			- 分片
+	- 分布式缓存
+		- Memcached
+		- Redis
+	- 关系数据库
+		- MySQL
+			- 引擎
+				- InnoDB（支持事务）
+				- MyISAM（支持全文索引）
+			- 分库分表
+				- Cobar
+				- Mycat
+			- SQL优化
+				- 索引
+					- 主键索引
+					- 组合索引
+			- SQL注入
+			- 事务隔离级别（ACID）
+				- 原子性
+				- 一致性
+				- 隔离性
+				- 持久性
+			- 锁
+				- 表锁
+				- 行锁
+				- 乐观锁
+				- 悲观锁
+		- 数据库设计
+			- 范式
+				- 第一范式
+				- 第二范式
+				- 第三范式
+			- ER图
+		- 其他
+	- 搜索引擎
+		- Solr
+		- ElasticSearch
+	- 大数据
+		- Hadoop
+		- Hbase
+		- Spark
+		- Storm/jStorm
+- 算法与数据结构
+	- 字符串
+		- 查找匹配（KMP）
+		- 正则表达式
+	- 数组
+	- 链表
+	- 栈
+	- 队列
+	- 树
+		- 二叉树
+			- 前序遍历
+			- 中序遍历
+			- 后序遍历
+		- B Tree/B+ Tree
+		- 红黑树
+	- 哈希
+		- 哈希冲突
+		- k-v
+	- 图
+		- BFS
+		- DFS
+	- 排序
+		- 内部排序
+			- 插入排序
+				- 直接插入排序
+				- 希尔排序
+			- 选择排序
+				- 简单选择排序
+				- 堆排序
+			- 交换排序
+				- 冒泡排序
+				- 快速排序
+			- 归并排序
+			- 基数排序
+			- 桶排序
+		- 外部排序
+
+- 分布式系统
+	- 从集中式到分布式
+	- 分布式Session
+		- Session复制
+		- Session绑定
+		- Session服务器
+	- 分布式缓存
+		- Redis
+		- 一致性hash
+	- 数据库
+		- 读写分离
+			- 主从热备
+		- 分库
+		- 分表
+	- 一致性
+		- 分布式事务
+			- CAP
+			- BASE
+			- 2PC/3PC
+			- Paxos
+		- 分布式锁
+			- Redisson
+	- 负载均衡
+		- 硬件 F5
+		- 软件 LVS
+	- 消息队列
+		- RabbitMQ
+		- ZeroMQ
+		- ActiveMQ
+		- Kafka
+	- 服务化
+		- 服务注册与发现
+			- Zookeeper
+		- 架构
+			- 微服务
+				- Spring Boot
+				- Dubbo
+			- RPC
+			- SOA
+	- 虚拟化
+		- Docker
+	- 计算平台
+		- 实时
+		- 离线
+	- 容灾、异地多活
+
+
+
+
+
+
+
+
