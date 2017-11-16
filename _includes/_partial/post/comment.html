@@ -1,10 +1,25 @@
-{% if site.disqus_shortname %}
+{% if site.comment.gitment_repo %}
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://github.com/davidsky11/davidsky11.github.io/blob/master/_plugins/gitment/default.css">
+<script src="https://github.com/davidsky11/davidsky11.github.io/blob/master/_plugins/gitment/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: '{{ site.comment.gitment_owner }}',
+    repo: '{{ site.comment.gitment_repo }}',
+    oauth: {
+        client_id: '{{ site.comment.gitment_client_id }}',
+        client_secret: '{{ site.comment.gitment_client_secret }}',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+{% elsif site.comment.disqus_shortname %}
 <section id="comments" class="comment">
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
-{% elsif site.laibili_shortname %}
+{% elsif site.comment.laibili_shortname %}
 <div id="lv-container" data-id="city" data-uid="MTAyMC8yOTI3Mi81ODQw">
 	<script type="text/javascript">
    (function(d, s) {
@@ -21,7 +36,7 @@
 	</script>
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
-{% elsif site.hypercomments_id %}
+{% elsif site.comment.hypercomments_id %}
 <section id="comments" class="comment">
 	<div id="hypercomments_widget"></div>
 </section>
@@ -51,7 +66,7 @@ input.hcc::-webkit-input-placeholder, textarea.hcc::-webkit-input-placeholder {
 	color: #aaa;
 }
 </style>
-{% elsif site.yungentie_productkey %}
+{% elsif site.comment.yungentie_productkey %}
 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
 <script>
@@ -63,20 +78,5 @@ var cloudTieConfig = {
 };
 var yunManualLoad = true;
 Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-</script>
-{% elsif site.comment.gitment_repo %}
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://github.com/davidsky11/davidsky11.github.io/blob/master/_plugins/gitment/default.css">
-<script src="https://github.com/davidsky11/davidsky11.github.io/blob/master/_plugins/gitment/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: '{{ site.comment.gitment_owner }}',
-    repo: '{{ site.comment.gitment_repo }}',
-    oauth: {
-        client_id: '{{ site.comment.gitment_client_id }}',
-        client_secret: '{{ site.comment.gitment_client_secret }}',
-    },
-});
-gitment.render('gitmentContainer');
 </script>
 {% endif %}
