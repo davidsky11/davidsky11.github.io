@@ -123,12 +123,8 @@ links:
 #disqus_shortname:     ## e.g. wuchong      your disqus short name.        website: http://disqus.com
 #hypercomments_id:     ## e.g. 91510        your hypercomments widget id.  website: http://hypercomments.com
 #yungentie_productkey: ## your netease yungentie product key.              website: https://gentie.163.com
-gitment:
-  owner: davidsky11
-  repo: https://github.com/davidsky11/davidsky11.github.io
-  client_id: 9570394191bcaa02e597
-  client_secret: e9f09cc4c6e46189cd106767afb17231d65006cc
-
+comment:
+  gitment
 ## set only one of them
 
 #### Share button
