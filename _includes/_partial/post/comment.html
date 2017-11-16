@@ -64,4 +64,19 @@ var cloudTieConfig = {
 var yunManualLoad = true;
 Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
 </script>
+{% if site.comment.gitment %}
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://github.com/davidsky11/davidsky11.github.io/blob/master/_plugins/gitment/default.css">
+<script src="https://github.com/davidsky11/davidsky11.github.io/blob/master/_plugins/gitment/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: '{{ site.comment.gitment_owner }}',
+    repo: '{{ site.comment.gitment_repo }}',
+    oauth: {
+        client_id: '{{ site.comment.gitment_client_id }}',
+        client_secret: '{{ site.comment.gitment_client_secret }}',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
 {% endif %}
